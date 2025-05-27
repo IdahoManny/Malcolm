@@ -112,6 +112,8 @@ global json_format = (getenv("ZEEK_JSON") == true_regex) ? T : F;
 @load policy/frameworks/notice/community-id
 @load ./login.zeek
 
+@load ./SimpleEnrich.zeek
+
 @if (!disable_best_guess_ics)
  @load ./guess.zeek
 @endif
